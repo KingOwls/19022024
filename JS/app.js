@@ -45,3 +45,27 @@ function sum(a, b, c){
 const numbers = [1,2,3];
 const result = sum(...numbers);
 console.log(result);
+
+const cambiarNombre = (personas) =>{
+    personas.nombre = 'Tony';
+    return personas
+}
+
+let perter = {nombre: 'peter'};
+let tony = cambiaNombre(peter);
+
+console.log({ peter, tony})
+
+const frutas = ['Manzana', 'Pera', 'Piña'];
+
+console.time('slice');
+const otraFrutas = frutas.slice();
+console.timeEnd('slice');
+
+console.time('Spread');
+const otraFrutras2 = [...frutas];
+console.timeEnd('Spread');
+
+otraFtrutas.push('Mango');
+
+console.table({frutas, otraFrutas});
